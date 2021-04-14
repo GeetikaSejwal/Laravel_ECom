@@ -1,8 +1,13 @@
 <?php 
 use App\Http\Controllers\ProductController;
+$total=0;
+if(Session::has('user'))
+{
+  $total= ProductController::cartItem();
+}
+
 ?>
-<nav class="navbar navbar-light" >
-    
+<nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -12,7 +17,7 @@ use App\Http\Controllers\ProductController;
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">EazyBuy</a>
+        <a class="navbar-brand" href="/">E-Comm</a>
       </div>
   
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -25,12 +30,10 @@ use App\Http\Controllers\ProductController;
           <div class="form-group">
             <input type="text" name="query" class="form-control search-box" placeholder="Search">
           </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  Search</button>
+          <button type="submit" class="btn btn-default">Search</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/cartlist">cart</a></li>
+          <li><a href="/cartlist">cart({{$total}})</a></li>
           @if(Session::has('user'))
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
