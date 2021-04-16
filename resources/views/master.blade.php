@@ -16,8 +16,7 @@
 <body>
     {{View::make('header')}}
     @yield('content')
-    {{View::make('footer')}}
-
+    {{ View::make('footer') }}
 </body>
 <style>
     .custom-login{
@@ -28,15 +27,16 @@
         height: 400px !important
     }
     .custom-product{
-        height: 600px
+        height: 800px;
     }
     .slider-text{
+        text-align: center;
         background-color: #35443585 !important;
     }
     .trending-image{
         height: 100px;
     }
-    .trening-item{
+    .trending-item{
         float: left;
         width: 20%;
     }
