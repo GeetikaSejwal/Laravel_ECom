@@ -1,10 +1,10 @@
 <?php 
-// use App\Http\Controllers\ProductController;
-// $total=0;
-// if(Session::has('user'))
-// {
-//   $total= ProductController::cartItem();
-// }
+use App\Http\Controllers\ProductController;
+$total=0;
+if(Session::has('user'))
+{
+  $total= ProductController::cartItem();
+}
 ?>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -22,7 +22,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="/">Home</a></li>
           <li><a href="/myorders">Orders</a></li>
         </ul>
         <form action="/search" class="navbar-form navbar-left">
@@ -32,7 +32,7 @@
           <button type="submit" class="btn btn-default">Search</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/cartlist">cart()</a></li>
+          <li><a href="/cartlist">cart({{ $total }})</a></li>
           @if(Session::has('user'))
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
