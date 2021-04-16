@@ -47,7 +47,7 @@
         height: 200px;
     }
     .search-box{
-        width: 500px !important
+        width: 750px !important
     }
     .cart-list-devider{
         border-bottom: 1px solid #ccc;

@@ -32,8 +32,8 @@
           <button type="submit" class="btn btn-default">Search</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          {{-- <li><a href="/cartlist">cart({{$total}})</a></li> --}}
-          {{-- @if(Session::has('user'))
+          <li><a href="/cartlist">cart()</a></li>
+          @if(Session::has('user'))
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}
             <span class="caret"></span></a>
@@ -43,7 +43,7 @@
           </li>
           @else
           <li><a href="/login">Login</a></li>
-          @endif --}}
+          @endif
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
