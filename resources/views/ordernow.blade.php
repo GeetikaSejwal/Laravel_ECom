@@ -7,19 +7,19 @@
             <tbody>
               <tr>
                 <td>Amount</td>
-              <td>$ {{$total}}</td>
+              <td> ₹ {{$total}}</td>
               </tr>
               <tr>
                 <td>Tax</td>
-                <td>$ 0</td>
+                <td>₹ 0</td>
               </tr>
               <tr>
                 <td>Delivery </td>
-                <td>$ 10</td>
+                <td>₹ 10</td>
               </tr>
               <tr>
                 <td>Total Amount</td>
-              <td>$ {{$total+10}}</td>
+              <td>₹ {{$total+10}}</td>
               </tr>
             </tbody>
           </table>

@@ -17,28 +17,28 @@ class ProductSeeder extends Seeder
         DB::table('products')->insert([
             [
                 'name'=>'OnePlus 9 series',
-                'price'=>'₹49,999.00',
+                'price'=>'49,999.00',
                 'category'=>'mobiles',
                 'description'=>'A revolutionary smartphone with OxygenOS 11.2.3.3 and improved battery life.',
                 'gallery'=> 'https://st1.bgr.in/wp-content/uploads/2021/03/oneplus-9-series-company.jpg'
             ],
             [
                 'name'=>'Ashirwaad Atta 10 KG Pack',
-                'price'=>'₹ 375.00',
+                'price'=>' 375.00',
                 'category'=>'Groceries',
                 'description'=>'Filled with goodness for a healthy life',
                 'gallery'=> 'https://mir-s3-cdn-cf.behance.net/projects/404/9c284988149923.Y3JvcCwxMjAwLDkzOCwwLDEzMA.jpg'
             ],
             [
                 'name'=>'Bata ',
-                'price'=>'₹1799',
+                'price'=>'1799',
                 'category'=>'sneakers',
                 'description'=>'Get Comfort with Style....Surprisingly BATA',
                 'gallery'=> 'https://asset22.ckassets.com/resources/image/staticpage_images/Cat-Men-Footwear-SlippersFlipFlops-Myntra-Bata-01.jpg'
             ],
             [
                 'name'=>'Titan',
-                'price'=>'₹ 6,295',
+                'price'=>' 6,295',
                 'category'=>'watches',
                 'description'=>'The jewel of every beautiful women.....',
                 'gallery'=> 'https://www.titancompany.in/sites/default/files/Main-banner-1920x861.jpg'
